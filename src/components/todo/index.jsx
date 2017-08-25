@@ -29,9 +29,9 @@ class TODO extends React.Component {
 
         return (
             <div className="todo">
-                <h2>Todo List</h2>
+                <h2>TODO List</h2>
                 <div>
-                    <input type="text" placeholder="type something.." onKeyPress={this._onKeyPressHandler.bind(this)} />
+                    <input type="text" placeholder="Tarea" onKeyPress={this._onKeyPressHandler.bind(this)} />
                 </div>
                 <ul>
                     {list.map((item, index) => <li key={index}><span>{index + 1}</span> {item} <a onClick={this._delItemHandler.bind(this, index)}>x</a></li>)}
