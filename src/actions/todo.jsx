@@ -45,3 +45,30 @@ export const remove = (index) => {
     }
 }
 
+
+// export const getList = (props) => {
+//     return (dispatch) => {
+//         dispatch({ type: "LIST_FETCHING" });
+
+//         request.get(`list/restful`, props)
+//             .then(response => {
+//                 if (!response.data.error) {
+//                     dispatch({
+//                         type: "LIST_SUCCESS",
+//                         payload: response.data.data
+//                     });
+//                 } else {
+//                     dispatch({
+//                         type: "LIST_FAILURE",
+//                         payload: response.data.message,
+//                         code: response.data.code
+//                     });
+//                 }
+//             })
+//             .catch((e) => dispatch({
+//                 type: "LIST_FAILURE",
+//                 payload: e.message,
+//                 code: e.response.code
+//             }));
+//     }
+// }
