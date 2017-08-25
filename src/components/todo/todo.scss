@@ -1,0 +1,9 @@
+.todo {
+    ul li a {
+        cursor: pointer;
+        color: blue;
+        &:hover {
+            color: crimson;
+        }
+    }
+}
